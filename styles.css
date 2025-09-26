@@ -1,0 +1,22 @@
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    gap: 24px;
+    list-style-type: none;
+    background: linear-gradient(to right, #ffcb05, #3b4cca);
+    padding: 12px 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+li {
+    border: 2px solid black;
+    padding: 4px;
+    background-color: deepskyblue;
+    color: black;
+}
+
+
+
+
+
