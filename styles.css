@@ -1,12 +1,29 @@
+:root {
+    --background-image: url(main-pokeball.png);
+}
+
+.pokemon-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #ffcb05, #3b4cca);
+    padding: 12px 24px;
+    font-family: myFont;
+    border: 2px solid black;
+}
+
 .nav-menu {
     display: flex;
     flex-direction: row;
-    justify-content:left;
     gap: 24px;
     list-style-type: none;
-    background: linear-gradient(to right, #ffcb05, #3b4cca);
-    padding: 12px 24px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin: 0;
+}
+
+.search-container {
+    display: flex;
+    gap: 8px;
 }
 
 li {
@@ -16,7 +33,132 @@ li {
     color: black;
 }
 
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(pokemon-font.ttf);
+}
+
+h1 {
+    font-family: myFont;
+    font-size: 2.5em;
+    color: #3b4cca;
+    text-align: center;
+    margin: 16px 0;
+}
+
+input {
+    font-family: myFont;
+    padding: 8px;
+    border: 2px solid #3b4cca;
+    border-radius: 4px;
+    width: 200px;
+}
 
 
+.options-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 40px 0;
+    padding: 0 50px;
+}
+
+.option-card {
+    text-decoration: none;
+    flex: 0 1 45%;
+    max-width: 450px;
+    border: 3px solid #3b4cca;
+    border-radius: 10px;
+    background-color: #ffcb05;
+}
+
+.option-card:hover {
+    transform: translateY(-5px);
+}
+
+.my-binder,
+.all-pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.my-binder img,
+.all-pokemon img {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.option-card p {
+    font-family: myFont, sans-serif;
+    font-size: 1.5em;
+    color: #3b4cca;
+    margin: 0;
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border: 3px solid #3b4cca;
+    background-image: var(--background-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    opacity: 0.95;
+    border-radius: 10px;
+}
+
+.main-content h2 {
+    font-family: myFont;
+    font-size: 2em;
+    color: white
+}
+
+.main-content p {
+    font-family: myFont, sans-serif;
+    font-size: 1.1em;
+    color: white
+}
+
+.pokemon-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
 
 
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    flex: 1;
+    text-align: center;
+    border: 2px solid black;
+    padding: 8px;
+    background-color: deepskyblue;
+    color: black;
+    font-family: myFont;
+}
+
+#search-button {
+    font-family: myFont;
+}

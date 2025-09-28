@@ -1,26 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<html>
-
 <head>
     <meta charset="UTF-8">
-    <title>Project Title</title>
+    <title>Pokémon Collection</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"></script>
 </head>
-<nav class="pokemon-nav">
-    <ul class="nav-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Collection</a></li>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Donate</a></li>
-        <li><input type="text" placeholder="Search Pokémon...">
-            <button>Search</button>
-        </li>
-        </ul>
-</nav>
+
 <body>
+    <header class="pokemon-header">
+        <h1>Pokémon Collection</h1>
+        <nav class="pokemon-nav">
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Donate</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Search Pokémon...">
+                <button id="search-button">Search</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="main-content">
+            <h2>Welcome to Your Pokémon Collection!</h2>
+            <p>Manage and explore your favorite Pokémon with ease.</p>
+        </section>
+
+        <section class="options-container">
+            <a href="my-binder.html" class="option-card">
+                <section class="my-binder">
+                    <img src="binder.png" alt="My Binder Icon">
+                    <p>My Binder</p>
+                </section>
+            </a>
+
+            <a href="all-pokemon.html" class="option-card">
+                <section class="all-pokemon">
+                    <img src="all_pokemon_icon.png" alt="All Pokémon Icon">
+                    <p>All Pokémon</p>
+                </section>
+            </a>
+        </section>
+        <footer class="pokemon-footer">
+            <nav class="footer-nav">
+                <ul class="footer-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="help.html">Help</a></li>
+    </main>
 
 </body>
 
